@@ -2,6 +2,21 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   <ion-searchbar searchIcon="search-circle"></ion-searchbar>
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="today" >
+      Today
+    </ion-segment-button>
+    <ion-segment-button value="tomorrow">
+      Tomorrow
+    </ion-segment-button>
+    <ion-segment-button value="10days">
+      10 Days
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list *ngIf="selectedSegment">
+    
+  </ion-list>
 </ion-content>
