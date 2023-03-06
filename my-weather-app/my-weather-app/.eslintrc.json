@@ -5,7 +5,7 @@
     {
       "files": ["*.ts"],
       "parserOptions": {
-        "project": ["tsconfig.json"],
+        "project": ["my-weather-app/my-weather-app/tsconfig.json"],
         "createDefaultProgram": true
       },
       "extends": [
